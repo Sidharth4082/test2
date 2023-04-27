@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metaData:
+metadata:
   name: my-app-deployment 
   labels:
     app: my-app 
@@ -10,7 +10,7 @@ spec:
     matchLabels:
       app: my-app
   template:
-    metaData:
+    metadata:
       labels:
         app: my-app
     spec:
@@ -25,7 +25,7 @@ spec:
 
 apiVersion: v1 
 kind: Service
-metaData:
+metadata:
   name: my-app-service
 spec:
   selector:
